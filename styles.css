@@ -388,3 +388,152 @@ input[type=file]::file-selector-button {
 input[type=file]::file-selector-button:hover {
     background: #0d45a5;
 }
+
+.DetailAnnonce {
+    width: 72rem;
+    height: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.DetailAnnonceImage>img {
+    border: 2px solid black;
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+    height: 393.75px;
+    min-height: 393.75px;
+    max-height: 393.75px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 1px 0px, rgba(0, 0, 0, 0.25) 0px 2px 4px 0px, rgba(0, 0, 0, 0.25) 0px 4px 8px 0px, rgba(0, 0, 0, 0.15) 0px 6px 10px 0px, rgba(0, 0, 0, 0.07) 0px 12px 15px 0px;
+}
+
+.btn_download {
+    text-decoration: none solid rgb(16, 19, 25);
+    color: rgb(16, 19, 25);
+    display: block;
+    padding: 15px 0px 14px;
+    text-align: center;
+    background: rgb(249, 212, 73) none repeat scroll 0% 0% / auto padding-box border-box;
+    width: 700px;
+    font-weight: 700;
+    text-transform: uppercase;
+    clear: both;
+    margin-left: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+/* user profile */
+
+.userprofile {
+    border: 3px dotted black;
+    width: 75rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userprofileimg>img {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none rgb(33, 37, 41);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    line-height: 24.5px;
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-size: 14px;
+    vertical-align: baseline;
+    width: 406.656px;
+    min-width: 406.656px;
+    max-width: 406.656px;
+    height: 509px;
+    min-height: 509px;
+    max-height: 509px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.userprofilecontent {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px 30px;
+    border: 0px none rgb(33, 37, 41);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    line-height: 24.5px;
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-size: 14px;
+    vertical-align: baseline;
+    height: 509px;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.userprofileName {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, "Segoe UI", sans-serif;
+    color: #0bafff;
+}
+
+.userprofilecards {
+    width: 40rem;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+
+.userprofilecard {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none rgb(119, 119, 119);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    line-height: 24.5px;
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-size: 14px;
+    vertical-align: baseline;
+    width: 231.656px;
+    height: 119.083px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}

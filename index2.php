@@ -1,7 +1,36 @@
+<?php
+session_start();
+require("./Config/config.php");
+
+if(!isset($_SESSION["user_id"])){
+  header("Location: index.php");
+  
+  exit(0); 
+}
+
+
+
+
+$id = $_SESSION["user_id"];
+
+$sql = "SELECT * FROM annonce";
+$stmt = $conn->prepare($sql); 
+
+$stmt->execute();
+$result = $stmt->get_result();
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Account</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -12,7 +41,7 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-   <?php require("./Composants/Nav.php") ?>
+   <?php require("./Composants/Nav2.php") ?>
 
     <header></header>
 
@@ -23,16 +52,16 @@
 
       <div class="cards">
 
-      <?php for ($i = 0 ; $i<=6 ; $i++): ?>
+      <?php foreach($result as $annonce): ?>
         <div class="card">
-          <a href="DetailAnnonce.php?id=<?= $i ?>"
+          <a href="DetailAnnonce.php?id=<?= $annonce["image_id"] ?>"
             ><img
-              src="https://wallpapershome.com/images/pages/ico_h/23987.jpg"
+              src="<?=  $annonce["image"] ?>"
               alt=""
           /></a>
         </div>
-       
-        <?php endfor ?>
+        <?php endforeach ?>
+        
      
       </div>
     </div>
